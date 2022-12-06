@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  align-items: center;
+  z-index: 2;
+}
+
+body {
+  background-color: #dcdcdc !important;
+}
+
+.mainSearch {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.logo .fa-facebook-square {
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.logo .fa-facebook-square:hover {
+  background-color: lightgray;
+}
+
+.searchInput {
+  display: block;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0 15px;
+  border: none;
+}
+
+.navigation {
+  display: flex;
+  width: 600px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.mainNavigation {
+  align-items: center;
+  padding-top: 14px;
+}
+
+.navIcons {
+  font-size: 35px;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 0 20px;
+}
+
+.navIcons:hover {
+  background: lightgray;
+}
+
+.links {
+  display: flex;
+}
+
+.links > li > a > i {
+  font-size: 35px;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 0 20px;
+}
+
+.links > li > a > i:hover {
+  background-color: lightgray;
+}
+
+.linksContainer {
+  padding-top: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.leftContent,
+.rightContent {
+  background-color: #dcdcdc;
+  width: 320px;
+  height: 100%;
+  position: fixed;
+}
+
+.leftContent {
+  left: 0;
+}
+
+.rightContent {
+  right: 0;
+}
+
+.mainContent {
+  width: 600px;
+  background-color: white;
+}
+
+.post {
+  box-shadow: 5px 5px 5px 5px #888888;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .fa-ellipsis-h {
+  position: relative;
+} */
+
+.profileOptions {
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.profileOptions:hover {
+  background-color: lightgrey;
+}
+
+.profileOptionsDropdown,
+.menuOptionsDropdown,
+.moreInfoContent {
+  display: none;
+  flex-direction: column;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 1;
+  width: 200px;
+}
+
+.mic0 {
+  top: 350px;
+  right: 50px;
+}
+
+.mic1 {
+  top: 410px;
+  right: 50px;
+}
+
+.profileUserInfo {
+  display: flex;
+}
+
+.profileName {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImage {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.postInfoDate {
+  font-size: 10px;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.infoIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  font-size: 28px;
+  color: white;
+  background: grey;
+  border-radius: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.imgContent {
+  max-width: 100%;
+}
+
+.postTitle {
+  margin-top: 5px;
+  padding-left: 15px;
+  display: block;
+}
+
+.postDescription {
+  padding: 15px;
+}
+
+.reacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.reacts .reactsCount {
+  cursor: pointer;
+}
+
+.reacts .reactsCount:hover {
+  text-decoration: underline;
+}
+
+.reactions {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px 40px;
+  margin-bottom: 15px;
+}
+
+.reactions:hover {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.prieteni {
+  overflow-y: scroll;
+  direction: rtl;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.profileImage {
+  height: 40px;
+  width: 40px;
+}
+
+.friends > span {
+  margin-left: 10px;
+}
+
+.contacts {
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends {
+  width: 100%;
+  height: 3em;
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+
+.friends:hover {
+  background-color: #c6c3c3;
+  border-radius: 10px;
+}
+
+.contactsIcon {
+  font-size: 16px;
+  color: #767171;
+}
+
+.contactsIconContainer {
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+}
+
+.spanContacts {
+  color: #767171;
+}
+
+.leftContentImages {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.linksLeft {
+  display: flex;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 3em;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.linksLeft:hover {
+  background-color: #c6c3c3;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.linksLeft > span {
+  color: black;
+  padding-left: 10px;
+}
+
+input[type="search"] {
+  background-color: #f5f5f5;
+}
+
+.enterCommentInput {
+  display: flex;
+}
+
+.commentInput {
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.commentsSection {
+  display: flex;
+  align-items: flex-start;
+}
+
+.accountSettings {
+  position: relative;
+}
+
+@media only screen and (max-width: 1250px) {
+  .leftContent,
+  .rightContent {
+    width: 150px;
+  }
+}

@@ -1,0 +1,116 @@
+.loginForm {
+  border: 3px solid black;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+  transition: width 2s, height 2s, background-color 2s, transform 2s,
+    box-shadow 2s;
+  animation: bounce 1s linear;
+}
+
+.loginFormField {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm:hover {
+  background-color: #f2ed65;
+  width: 650px;
+  height: 350px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 10rem;
+  height: 1.2rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  background-color: #d5d4d4;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="password"]::placeholder {
+  padding-left: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#headerTitle {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#forgotPassword {
+  font-family: "Open Sans", sans-serif;
+}
+
+#loginButton,
+#switchButton {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#loginButton:hover,
+#switchButton:hover {
+  background-color: #d5d4d4;
+}
+
+#loginButton:active,
+#switchButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  #loginButton,
+  #switchButton {
+    padding: 0.25em 0.75em;
+  }
+}

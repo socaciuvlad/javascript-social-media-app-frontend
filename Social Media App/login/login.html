@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login pensiune</title>
+  </head>
+  <body>
+    <div class="loginForm">
+      <h1 id="headerTitle">Login</h1>
+      <form action="">
+        <span id="error" style="display: none"></span>
+        <div class="loginFormField">
+          <label for="userInput"></label>
+          <input type="text" id="userInput" placeholder="Enter your email" />
+        </div>
+        <div class="loginFormField">
+          <label for="passwordInput"></label>
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="loginFormField">
+          <input type="submit" id="loginButton" value="login" />
+        </div>
+        <div class="loginFormField">
+          <span id="forgotPassword">forgot password?</span>
+        </div>
+      </form>
+      <input
+        type="button"
+        value="Switch to create new account"
+        id="switchButton"
+      />
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Social media app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- CSS only  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mainSearch">
+        <div class="logo">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <form>
+          <input type="search" class="searchInput" placeholder="Search.." />
+        </form>
+      </div>
+
+      <nav class="mainNavigation">
+        <ul class="navigation">
+          <li>
+            <a href="#"><i class="navIcons fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="navIcons fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="navIcons fas fa-users"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="navIcons fab fa-facebook-messenger"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="navIcons fas fa-video"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="linksContainer">
+        <ul class="links">
+          <li>
+            <a href="#"><i class="fas fa-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li class="accountSettings">
+            <a href="#" id="accountSettingsButton"
+              ><i class="fas fa-arrow-alt-circle-down"></i
+            ></a>
+            <div class="menuOptionsDropdown" tabindex="1">
+              <div id="logoutButton">Log Out</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <aside class="leftContent">
+        <div class="leftContainer">
+          <div class="linksLeft">
+            <img
+              src="assets/images/profile2.jpg"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Vlad Catalin Socaciu</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/users.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Friends</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/events.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Events</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/groups.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Groups</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/marketplace.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Marketplace</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/watch.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>History</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/memories.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Memories</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/saved.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Saved</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/pages.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Pages</span>
+          </div>
+          <div class="linksLeft">
+            <img
+              src="assets/images/recent.png"
+              alt="no profile image"
+              class="leftContentImages"
+            />
+            <span>Recent</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="allPosts">
+        <div class="mainContent">
+          <article class="post">
+            <div class="postHeader">
+              <div class="profileUserInfo">
+                <a href="#">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="profile picture"
+                    class="profileImage"
+                  />
+                </a>
+                <div class="profileName">
+                  <span class="profileNameText">Username 1</span>
+                  <span class="postInfoDate">06 iun 2022</span>
+                </div>
+              </div>
+              <div class="profileOptions pf0">
+                <a href="#" class="profileOptionsButton"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></a>
+                <div class="profileOptionsDropdown" tabindex="1">
+                  <div>salveaza aceasta postare</div>
+                  <div>raporteaza aceasta postare</div>
+                  <div>xxx aceasta postare</div>
+                  <div>xxx aceasta postare</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="imageWrapper">
+                <img
+                  src="assets/images/post.jpg"
+                  alt="post img"
+                  class="imgContent"
+                />
+                <i class="fas fa-info-circle infoIcon"></i>
+                <div class="moreInfoContent mic0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  ipsam!
+                </div>
+              </div>
+
+              <strong class="postTitle">title</strong>
+              <p class="postDescription">
+                Aceasta este prima mea postare facuta pe reteaua de socializare
+                creata de catre mine in timpul cursului de web development
+              </p>
+            </div>
+
+            <div class="reacts">
+              <div class="likesNumber">
+                <i class="fas fa-thumbs-up"></i>
+                <span class="reactsCount">
+                  <span class="numberOfLikes"></span> likes</span
+                >
+              </div>
+              <div class="commentsNumber cn0">
+                <i class="fas fa-comments"></i>
+                <span class="reactsCount">
+                  <span class="numberOfComments"></span> comments</span
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="reactsActions">
+              <ul class="actions">
+                <li class="reactions likeButton">
+                  <i class="fas fa-thumbs-up">
+                    <span>like</span>
+                  </i>
+                </li>
+                <li class="reactions commentButton">
+                  <i class="fas fa-comments">
+                    <span>comment</span>
+                  </i>
+                </li>
+                <li class="reactions">
+                  <i class="fas fa-share"><span>share</span></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <section class="commentSection cs0">
+          <div class="enterCommentInput">
+            <img
+              src="assets/images/profile.jpg"
+              alt="post img"
+              class="profileImage"
+            />
+            <input type="text" class="commentInput" />
+          </div>
+          <span class="pressEnterNotification"></span>
+          <div class="commentsSection">
+            <img
+              src="assets/images/profile.jpg"
+              alt="post img"
+              class="profileImage"
+            />
+            <div>
+              <span>username</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, harum.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="mainContent">
+          <article class="post">
+            <div class="postHeader">
+              <div class="profileUserInfo">
+                <a href="#">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="profile picture"
+                    class="profileImage"
+                  />
+                </a>
+                <div class="profileName">
+                  <span class="profileNameText">Username 2</span>
+                  <span class="postInfoDate">07 aug 2022</span>
+                </div>
+              </div>
+              <div class="profileOptions pf1">
+                <a class="profileOptionsButton"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></a>
+                <div class="profileOptionsDropdown" tabindex="1">
+                  <div>salveaza aceasta postare</div>
+                  <div>raporteaza aceasta postare</div>
+                  <div>xxx aceasta postare</div>
+                  <div>xxx aceasta postare</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="imageWrapper">
+                <img
+                  src="assets/images/post2.jpg"
+                  alt="post img"
+                  class="imgContent"
+                />
+                <i class="fas fa-info-circle infoIcon"></i>
+                <div class="moreInfoContent mic1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  ipsam!
+                </div>
+              </div>
+
+              <strong class="postTitle">title</strong>
+              <p class="postDescription">
+                Aceasta este prima mea postare facuta pe reteaua de socializare
+                creata de catre mine in timpul cursului de web development
+              </p>
+            </div>
+
+            <div class="reacts">
+              <div class="likesNumber">
+                <i class="fas fa-thumbs-up"></i>
+                <span class="reactsCount">
+                  <span class="numberOfLikes"></span> likes</span
+                >
+              </div>
+              <div class="commentsNumber cn1">
+                <i class="fas fa-comments"></i>
+                <span class="reactsCount">
+                  <span class="numberOfComments"></span> comments</span
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="reactsActions">
+              <ul class="actions">
+                <li class="reactions likeButton">
+                  <i class="fas fa-thumbs-up">
+                    <span>like</span>
+                  </i>
+                </li>
+                <li class="reactions commentButton">
+                  <i class="fas fa-comments">
+                    <span>comment</span>
+                  </i>
+                </li>
+                <li class="reactions">
+                  <i class="fas fa-share"><span>share</span></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <section class="commentSection cs1">
+          <div class="enterCommentInput">
+            <img
+              src="assets/images/profile.jpg"
+              alt="post img"
+              class="profileImage"
+            />
+            <input type="text" class="commentInput" />
+          </div>
+          <span class="pressEnterNotification"></span>
+          <div class="commentsSection">
+            <img
+              src="assets/images/profile.jpg"
+              alt="post img"
+              class="profileImage"
+            />
+            <div>
+              <span>username</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, harum.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="rightContent">
+        <div class="prieteni">
+          <div class="contacts">
+            <div class="contactsIconContainer">
+              <a href="#"><i class="fas fa-video contactsIcon"></i></a>
+              <a href="#"><i class="fas fa-search contactsIcon"></i></a>
+              <a href="#"><i class="fa fa-ellipsis-h contactsIcon"></i></a>
+            </div>
+            <span class="spanContacts">Contacts</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+          <div class="friends">
+            <img
+              src="assets/images/profile1.jpg"
+              alt="poza1"
+              class="profileImage"
+            />
+            <span>Pop Ioan Vasile</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+  <script src="js/vsocaciu_sm.js"></script>
+</html>
